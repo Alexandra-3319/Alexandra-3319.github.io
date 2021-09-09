@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <style>
+        body {
+            background-image: url("backgroundfoto.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        #white-background {
+            background-color: white;
+            text-align: center;
+            padding: 100px 150px 450px 150px;
+            margin: 150px 100px 75px 100px;
+        }
+
+		#contact {
+			margin: 0px 0px 0px 0px;
+			padding: 7.5px 30px 7.5px 30px;
+			overflow: hidden;
+			border-color: white;
+			border-width: 2px;
+			border-style: ridge;
+			float: right;
+			display: block;
+		}
+
+		#nav a {
+			color: white;
+			text-decoration: none;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0px 0px 0px -5px;
+			padding: 0px 0px 0px 0px;
+			overflow: hidden;
+		}
+
+		li {
+			display: inline-block;
+		}
+
+		li a {
+			margin: 0px -3px 0px -3px;
+			padding: 7.5px 30px 7.5px 30px;
+			overflow: hidden;
+			border-color: white;
+			border-width: 2px;
+			border-style: ridge;
+			display: block;
+			float: left;
+			text-emphasis-color: white;
+		}
+
+        .selfie{
+            width: 265px;
+            height: auto;
+            float: left;
+            margin: -50px 0px -50px -100px;
+        }
+
+        .color-code{
+            width: 500px;
+            height: auto;
+            float: right;
+            margin: -50px -100px -50px 0px;
+        }
+
+        .profilepar{
+            margin: -30px -200px -20px 0px;
+            text-align: left;
+
+        }
+        .profilepar a{ 
+            color: #fff
+        }
+
+        .profileparagraph{
+            width: 115px;
+            height: 75px;
+            float: left;
+            text-align: left;
+            clear: right;
+            margin-top: -120px;
+            padding: 120px;
+        }
+
+
+        #blue-box{  
+            display: block;
+            margin: 20px;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left:415px;
+            top:255px;
+            background-color: #5370c0;
+            padding: 10px;
+            color: white;
+            font-weight: normal;
+
+}
+	</style>
+</head>
+
+<body>
+    <div>
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog-feed.html">Blog</a></li>
+            <h4 id="contact"><a href="contact.html">Contact</a></h4>
+        </ul>
+    </div>
+    <div id="white-background">
+        <a href="profile.html"><img class=selfie src="selfie.jpg" alt="My selfie">
+        </a>
+        <a href="dashboard.html"><img class=color-code src="code-color.jpg" alt="decorative code picture">
+        </a>
+        <div class="profilepar">
+           <p class="profileparagraph">
+            <h3 id="blue-box">if you click <a href="profile.html">here</a> it will lead you to my profile page where you can get to
+                know me
+                beter. How fun! It will tell you about my hobbies and my personlality.
+                <br>
+                <br>
+                go to my <a href="profile.html">profile page</a>
+            </h3>
+            </p>
+        </div>
+    </div>
+</body>
+    
+    </html>
