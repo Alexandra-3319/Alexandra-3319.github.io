@@ -2,85 +2,225 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="stylesheet" />
+	<title>Alexandra's Dashboard</title>
+	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">-->
+	<meta name="descriptiion" content="See Alexandra's personal student dashboard with a year sheduele which contain the exams for each quartile. You can also find the aside menu here with useful sites"> 
+
 </head>
 
 <body>
-    <style>
-        body {
-            background-image: url("backgroundfoto.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0px;
-        }
-
-        #background {
-            background-color: white;
-            text-align: center;
-            padding: 100px 150px 450px 150px;
-            margin: 150px 100px 75px 100px;
-        }
-
-		#contact {
-			margin: 0px 0px 0px 0px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			float: right;
-			display: block;
+	<style>
+		table,
+		th,
+		td {
+			background-color: #6ce4e4;
+			width: auto;
+			align-items: center;
+			border-style: solid;
+			border-color: 1px black;
+			color: black;
+			border-collapse: collapse;
+			transition: all .1s ease;
 		}
 
-		#nav a {
-			color: white;
-			font-family: sans-serif;
-			text-decoration: none;
+		table,
+		td:hover {
+			transform: scale(1.2);
 		}
 
-		ul {
+		table {
+			position: absolute;
+			left: 245px;
+			top: 270px;
+		}
+
+		td {
+			width: 150px;
+		}
+
+		.aside-ul {
 			list-style-type: none;
-			margin: 0px 0px 0px -5px;
-			padding: 0px 0px 0px 0px;
-			overflow: hidden;
+			text-align: center;
+			width: 800px;
+			height: 270px;
+			background-color: cornflowerblue;
+			color: white;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			position: absolute;
+			top: 800px;
+			left: 300px;
+			font-size: 25px;
 		}
-
-		li {
-			display: inline-block;
-		}
-
-		li a {
-			margin: 0px -3px 0px -3px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			display: block;
-			float: left;
-			text-emphasis-color: white;
+		.aside-il h2{
+			margin: 0px;
 		}
 	</style>
-</head>
+	</head>
 
-<body>
-	<div>
-		<ul id="nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="dashboard.html">Dashboard</a></li>
-			<li><a href="faq.html">FAQ</a></li>
-			<li><a href="blog-feed.html">Blog</a></li>
-			<h4 id="contact"><a href="contact.html">Contact</a></h4>
-		</ul>
-	</div>
-	<div id="background">
-	</div>
-</body>
+	<body>
+		<nav>
+			<ul id="nav">
+				<li class="nav"><a href="index.html">Home</a></li>
+				<li class="nav"><a href="profile.html">Profile</a></li>
+				<li class="nav"><a href="dashboard.html">Dashboard</a></li>
+				<li class="nav"><a href="faq.html">FAQ</a></li>
+				<li class="nav"><a href="blog-feed.html">Blog</a></li>
+				<!--<h4 id="contact"><a href="contact.html">Contact</a></h4>-->
+			</ul>
+		</nav>
+		<header class="blogtitle"><h1>Dashboard</h1><div class="undertitle">Here you can see my schoolyear sheduele</div>
+		</header>
+		<main id="seethrough-background">
+		
+			<table>
+				<tr>
+					<th>Quartile</th>
+					<th>Course</th>
+					<th>EC</th>
+					<th>Exams</th>
+					<th>Progress</th>
+					<th>Grades</th>
+				</tr>
+				<tr>
+					<td rowspan="3">Whole year</td>
+					<td>Personal Professional Develpmenent</td>
+					<td>12.5</td>
+					<td>Project</td>
+					<td style=background-color:rgb(247,255,129)>In Prosses</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>IT Personlality</td>
+					<td>1.25</td>
+					<td>Personlality 1</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>1.25</td>
+					<td>Personlality 2</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td rowspan="3">1</td>
+					<td>Programme and Career Orientation</td>
+					<td>2.5</td>
+					<td>Assessment</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				</tr>
+				<tr>
+					<td>Computer Science basics</td>
+					<td>5</td>
+					<td>Written exam</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>Programming Basics</td>
+					<td>5</td>
+					<td>Case study</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td rowspan="2">2</td>
+					<td>Object Orientation Programming</td>
+					<td>10</td>
+					<td>Case study</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Project</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td rowspan="4">3</td>
+					<td>Framework Develpmenent 1</td>
+					<td>5</td>
+					<td>Case Study</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>Framework Project 1</td>
+					<td>7.5</td>
+					<td>Project</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Assessment</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Report</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td rowspan="3">4</td>
+					<td>Framework Project 2</td>
+					<td>10</td>
+					<td>Portfolio</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Project</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>Assessment</td>
+					<td style=background-color:rgb(252,95,95)>Uncompleted</td>
+					<td>10</td>
+				</tr>
+			</table>
+			<aside>
+			<ul class="aside-ul">
+				<li class="aside-il"><a
+						href="https://hz.nl/over-de-hz/regelingen-documenten-1/onderwijs-en-examenregelingen"
+						target="-blank"><h2><ins>HZ Course and Examination Regulations (CER)</ins></h2></a></li>
+				<li class="aside-il"><a
+						href="https://teams.microsoft.com/l/channel/19%3a2e2afa0286b04932be16cb8ad2d9d2c0%40thread.skype/General?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+						target="-blank"><h2><ins>The Teams enviroment</ins></h2></a></li>
+				<li class="aside-il"><a
+						href="https://hz.nl/uploads/documents/Regelingen/OERS/2020-2021/9.-Implementation-Regulations-ICT-Fulltime-2020-2021.pdf"
+						target="-blank"><h2><ins>The Implementation Regulations (IR)</ins></h2></a></li>
+				<li class="aside-il"><a href="https://learn.hz.nl/my/" target="-blank"><h2><ins>HZ learn</ins></h2></a></li>
+				<li class="aside-il"><a href="https://apps.hz.nl/angular/studievoortgang/studiestatus"
+						target="-blank"><h2><ins>Study Progress</ins></h2></a></li>
+				<li class="aside-il"><a href="https://github.com" target="-blank"><h2><ins>Github</ins></h2></a></li>
+			</ul>
+			</aside>
+			<!--<footer>
+				<label>Author: Alexandra Kranendonk</label>
+			</footer>-->
+		</main>
+	</body>
 
 </html>

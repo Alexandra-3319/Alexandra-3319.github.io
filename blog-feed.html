@@ -2,84 +2,235 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="stylesheet" />
+	<title>Alexandra's Blog</title>
+	<meta name="descriptiion" content="read Alexandra's blogposts about my studie choice, SWOT analysis, programming experience and about the Oracle company">
 </head>
 
 <body>
-    <style>
-        body {
-            background-image: url("backgroundfoto.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0px;
-        }
-
-        #background {
-            background-color: white;
-            text-align: center;
-            padding: 100px 150px 450px 150px;
-            margin: 150px 100px 75px 100px;
-        }
-
-		#contact {
-			margin: 0px 0px 0px 0px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			float: right;
-			display: block;
-		}
-
-		#nav a {
-			color: white;
-			font-family: sans-serif;
-			text-decoration: none;
-		}
-
-		ul {
+	<style>
+		.blogpost1 {
+			text-align: center;
+			background-color: #0766a6;
+			padding: 20px;
 			list-style-type: none;
-			margin: 0px 0px 0px -5px;
-			padding: 0px 0px 0px 0px;
-			overflow: hidden;
+			color: white;
+			border-radius: 30px;
+			border-style: outset;
+			border-width: thick;
+			width: 650px;
 		}
 
-		li {
-			display: inline-block;
+		.blogpost2 {
+			text-align: center;
+			background-color: #9da7c8;
+			padding: 20px;
+			list-style-type: none;
+			color: white;
+			border-radius: 30px;
+			border-style: outset;
+			border-width: thick;
+			width: 650px;
+			position: absolute;
+			left: 590px;
+
 		}
 
-		li a {
-			margin: 0px -3px 0px -3px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			display: block;
-			float: left;
-			text-emphasis-color: white;
+		.blogpost3 {
+			text-align: center;
+			background-color: #8dc667;
+			padding: 20px;
+			list-style-type: none;
+			color: white;
+			border-radius: 30px;
+			border-style: outset;
+			border-width: thick;
+			width: 650px;
+			position: absolute;
+			top: 953px;
+		}
+
+		/*/.blogpost4{
+			text-align: center;
+			background-color: #8dceae;
+			padding: 20px;
+			list-style-type: none;
+			color: white;
+			border-radius: 30px;
+			border-style: outset;
+			border-width: thick;
+			width: 650px;
+			position: absolute;
+			left: 590px;
+		}/*/
+
+		.blogpost5 {
+			text-align: center;
+			background-color: #0b81b7;
+			padding: 20px;
+			list-style-type: none;
+			color: white;
+			border-radius: 30px;
+			border-style: outset;
+			border-width: thick;
+			width: 650px;
+			position: absolute;
+			top: 1177px;
+			left: 560px;
+		}
+
+		.hzlogo {
+			width: 350px;
+			height: auto;
+			position: absolute;
+			top: 600px;
+			border-style: outset;
+			border-width: thick;
+			transition: all .1s ease;
+		}
+
+		.hzlogo:hover {
+			transform: scale(1.4);
+		}
+
+		.technasiumlogo {
+			width: 350px;
+			height: auto;
+			position: absolute;
+			top: 940px;
+			left: 920px;
+			border-style: outset;
+			border-width: thick;
+			transition: all .1s ease;
+		}
+
+		.technasiumlogo:hover {
+			transform: scale(1.4);
+		}
+
+		.oraclelogo {
+			width: 320px;
+			height: auto;
+			position: absolute;
+			top: 1200px;
+			border-style: outset;
+			border-width: thick;
+			transition: all .1s ease;
+		}
+
+		.oraclelogo:hover {
+			transform: scale(1.4);
+		}
+
+		.softwareengineer {
+			width: 320px;
+			height: auto;
+			position: absolute;
+			top: 270px;
+			left: 920px;
+			border-style: outset;
+			border-width: thick;
+			transition: all .1s ease;
+		}
+
+		.softwareengineer:hover {
+			transform: scale(1.4);
 		}
 	</style>
-</head>
+	</head>
 
-<body>
-	<div>
-		<ul id="nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="dashboard.html">Dashboard</a></li>
-			<li><a href="faq.html">FAQ</a></li>
-			<li><a href="blog-feed.html">Blog</a></li>
-			<h4 id="contact"><a href="contact.html">Contact</a></h4>
-		</ul>
-	</div>
-	<div id="background">
-	</div>
-</body>
-
+	<body>
+		<nav>
+			<ul id="nav">
+				<li class="nav"><a href="index.html">Home</a></li>
+				<li class="nav"><a href="profile.html">Profile</a></li>
+				<li class="nav"><a href="dashboard.html">Dashboard</a></li>
+				<li class="nav"><a href="faq.html">FAQ</a></li>
+				<li class="nav"><a href="blog-feed.html">Blog</a></li>
+				<!--<h4 id="contact"><a href="contact.html">Contact</a></h4>-->
+			</ul>
+		</nav>
+		<header class="blogtitle"><h1>My Blog</h1><div class="undertitle">Here will I put my blog posts</div></header>
+		<main id="seethrough-background">
+			</div>
+			<div class="blogpost1">
+				<h2>Studie choice</h2>
+				<p>I took a gap year to look at what i was interested in as a job at not just as a hobby. I also took
+					multiple test and did online research. (Corona limited my options)
+					<br><br>
+					I am a very curious person and like to now how things work up into detail. I think this kind of
+					study and work will give me the opportunity to discover and adjust these things. Since the demand
+					for ICT workers are high and workplaces give lots of opportunities to keep learning new things i can
+					keep my intrests wide and keep developing.
+					<br><br>
+					I want to find a job and maybe go abroad to do so. I hope during my internship to get an image of
+					the jobs and maybe even get a job over. I am most interested in software engineering. Sinds it means
+					i will be creating lots of things and i like to create. I expect to at least learn the basics of
+					computers, engineering, coding and how a lot of existing programs work.
+				</p>
+			</div>
+			<post class="blogpost2">
+				<h2>Personal SWOT analysis</h2>
+				<p>My Strenghts:
+					<br>
+					I am great in working alone, concentrating, technical aspects and finding solutions.
+					<br><br>
+					My Weaknesses:
+					<br>
+					I am bad at keeping myself motivated and concentrated when it comes to subject that i am not
+					interested in. Working together is not something i like doing.
+					<br><br>
+					Opportunities:
+					<br>
+					I am bad at keeping myself motivated and concentrated when it comes to subject that i am not
+					interested in. Working together is not something i like doing.
+					<br><br>
+					Threats:
+					<br>
+					I am not good at planning things and i tend to push work forward when i feel like i won’t do a good
+					job. I am quite a forgetful person.
+				</p>
+			</post>
+			<post class="blogpost3">
+				<h2>Programming experience</h2>
+				<p>I did a course at the HZ itself with O&O(research and design) with my previous school, Nehalennia,
+					where we had to make our own little game with programming/coding. It lasted about a week and worked
+					with others ICT students. At the end of the week we also made an application for traveling students.
+					It was quite a while ago but i think it was English, i can’t remember the application we used but it
+					was quite a simple one with easy basic coding.</p>
+			</post>
+			<!--<div class="blogpost4">
+			<h3>First feedback</h3>
+			<p>kakakaka</p>
+			</div> -->
+			<post class="blogpost5">
+				<h2>ICT field of work (company safari)</h2>
+				<p>Oracle is an American multinational computer technology corporation headquartered in Austin, Texas.
+					Oracle sells database software and technology, cloud engineered systems and enterprise software
+					products .particularly its own brands of database management systems. In 2020, Oracle was the
+					second-largest software company in the world by revenue and market capitalization. The company also
+					develops and builds tools for database development and systems of middle-tier software.
+					<br><br>
+					Providing organizations with the transformational tools they need to embrace innovation, Oracle
+					today announced continued advancements in emerging technologies across Oracle Cloud, including
+					artificial intelligence (AI), machine learning, blockchain, IoT, and human interfaces.
+					<br><br>
+					Oracle believes in the importance of Diversity and Inclusion, where everyone’s differences are
+					celebrated, and innovation can be found from the diverse backgrounds, views and abilities.​ They
+					have committed themselves to creating a workplace that enables people to do their best work and are
+					inspired to let their voice and values be heard.
+				</p>
+			</post>
+			<img class=hzlogo src="hzlogo.jpg" alt="The HZ logo (a university of applied sciences)">
+			<img class="technasiumlogo" src="Technasium.jpg" alt="Technasium logo(a course in highschool i did)">
+			<img class="oraclelogo" src="oracle.jpg" alt="Oracle logo (an American company who sell software">
+			<img class="softwareengineer" src="softwareenigneer.jpg" alt="a decorative software enigneer cloudmap">
+		</main>
+	</body>
+	<!--<footer>
+		<label>Author: Alexandra Kranendonk</label>
+	</footer>-->
 </html>

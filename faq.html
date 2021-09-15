@@ -2,84 +2,149 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>FAQ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="stylesheet" />
+	<title>Alexandra's FAQ</title>
+	<meta name="descriptiion" content="Q&A of questions i have or get asked about Alexandra or about my school HZ, like how do i print or scan a document at HZ etc.">
 </head>
 
 <body>
-    <style>
-        body {
-            background-image: url("backgroundfoto.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0px;
-        }
-
-        #background {
-            background-color: white;
-            text-align: center;
-            padding: 100px 150px 450px 150px;
-            margin: 150px 100px 75px 100px;
-        }
-
-		#contact {
-			margin: 0px 0px 0px 0px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			float: right;
-			display: block;
+	<style>
+		#gridbox {
+			font-size: 20px;
+			width: 75%;
+			margin: auto auto auto auto;
+			display: grid;
+			grid-template-columns: 45% 45%;
+			grid-template-rows: 300px 300px 300px;
+			grid-gap: 70px;
+			text-align: center;
 		}
 
-		#nav a {
-			color: white;
-			font-family: sans-serif;
-			text-decoration: none;
+		.faqpost1 {
+			background: #8dceae;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			height: 300px;
+			width: 350px;
+			transition: all .1s ease;
 		}
 
-		ul {
-			list-style-type: none;
-			margin: 0px 0px 0px -5px;
-			padding: 0px 0px 0px 0px;
-			overflow: hidden;
+		.faqpost1:hover {
+			transform: scale(1.4);
 		}
 
-		li {
-			display: inline-block;
+		.faqpost2 {
+			background: #0b81b7;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			height: 300px;
+			width: 350px;
+			transition: all .1s ease;
 		}
 
-		li a {
-			margin: 0px -3px 0px -3px;
-			padding: 7.5px 30px 7.5px 30px;
-			overflow: hidden;
-			border-color: white;
-			border-width: 2px;
-			border-style: ridge;
-			display: block;
-			float: left;
-			text-emphasis-color: white;
+		.faqpost2:hover {
+			transform: scale(1.4);
 		}
+
+		.faqpost3 {
+			background: #9da7c8;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			height: 300px;
+			width: 350px;
+			transition: all .1s ease;
+		}
+
+		.faqpost3:hover {
+			transform: scale(1.4);
+		}
+
+		.faqpost4 {
+			background: #8dc667;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			height: 300px;
+			width: 350px;
+			transition: all .1s ease;
+		}
+
+		.faqpost4:hover {
+			transform: scale(1.4);
+		}
+
+		.faqpost5 {
+			background: #0766a6;
+			padding: 10px;
+			border-style: outset;
+			border-width: thick;
+			border-radius: 30px;
+			height: 300px;
+			width: 350px;
+			transition: all .1s ease;
+		}
+
+		.faqpost5:hover {
+			transform: scale(1.4);
+		}
+
 	</style>
-</head>
+	</head>
 
-<body>
-	<div>
-		<ul id="nav">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="profile.html">Profile</a></li>
-			<li><a href="dashboard.html">Dashboard</a></li>
-			<li><a href="faq.html">FAQ</a></li>
-			<li><a href="blog-feed.html">Blog</a></li>
-			<h4 id="contact"><a href="contact.html">Contact</a></h4>
-		</ul>
-	</div>
-	<div id="background">
-	</div>
-</body>
-
+	<body>
+		<nav>
+			<ul id="nav">
+				<li class="nav"><a href="index.html">Home</a></li>
+				<li class="nav"><a href="profile.html">Profile</a></li>
+				<li class="nav"><a href="dashboard.html">Dashboard</a></li>
+				<li class="nav"><a href="faq.html">FAQ</a></li>
+				<li class="nav"><a href="blog-feed.html">Blog</a></li>
+				<!--<h4 id="contact"><a href="contact.html">Contact</a></h4>-->
+			</ul>
+		</nav>
+		<header class="blogtitle"><h1>FAQ</h1><div class="undertitle">Frequently Asked Questions</div>
+			</header>
+		<main id="seethrough-background">
+			<content id="gridbox">
+				<post class="faqpost1">
+					<h3>Q:How can you print a document from your laptop at HZ?</h3>
+					<p>A:If you connect your computer to a printer at HZ you can print documents.</p>
+				</post>
+				<post class="faqpost2">
+					<h3>Q:How can you scan a document and send it to your laptop at HZ?</h3>
+					<p>A:connect your computer to a printer, scan the document and it will show up on your computer.</p>
+				</post>
+				<post class="faqpost3">
+					<h3>Q:What do you need to do when you are sick / show sympthoms of the coronavirus?</h3>
+					<p>A:You can call the front desk or sent an email or message one of your teachers that you are sick
+						or show signs of corona. You are still expected follow the lessons through a stream and work at
+						home.</p>
+					</post>
+				<post class="faqpost4">
+					<h3>Q:How can you book a project space in one of the wings?</h3>
+					<p>A:Go to the HZ page and log in. Look for the service portal and click on it. Then go to" Make a
+						reservation" and "reserve a projectroom" and you will see the sheduele of the rooms you can
+						choose from and there you can reserve one for a specific time too.</p>
+					</post>
+				<post class="faqpost5">
+					<h3>Q:What are the instuctions if u want to park your car at the HZ parking lot?</h3>
+					<p>A: Because of the constuction going you can't park at HZ at the moment so you would have to park
+						at the Delta parking lot that has a section fot HZ students and teachers. </p>
+					</post>
+			</content>
+		</main>
+	</body>
+	<!--<footer>
+		<label>Author: Alexandra Kranendonk</label>
+	</footer>-->
 </html>
