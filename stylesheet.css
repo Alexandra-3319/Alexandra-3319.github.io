@@ -1,85 +1,281 @@
-        body {
-            background-image: url("backgroundfoto.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            margin: 0px;
-        }
+/* The CSS under this is for every page. */    
+        
+body {
+    background-image: url("http://localhost/photo/backgroundfoto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Georgia';
+    margin: 0px;
+    color: white;
+}
 
-       #seethrough-background {
-            margin: 20px 200px 175px 200px;
-            border-radius: 12px;
-        }
+#seethroughBackground-All {
+    margin: 20px 200px 175px 200px;
+    border-radius: 12px;
+}
 
-       /*/ #contact {
-            margin: 0px;
-            padding: 7.5px 30px 7.5px 30px;
-            overflow: hidden;
-            border-color: white;
-            border-width: 2px;
-            border-style: ridge;
-            float: right;
-            display: block;
-            transition: 0s;
-        }
+#navigationMenu-all {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;    
+}
 
-        #contact:hover {
-            background-color: #8dceae;
-        }/*/
-        #nav {
-            list-style-type: none;
-            margin: 0px;
-            padding: 0px;
-            overflow: hidden;    
-        }
-
-        #nav a { color: white;
-            font-family: sans-serif;
-            text-decoration: none;
-        }
+#navigationMenu-all a { 
+    text-decoration: none;
+    color: white;
+    }
             
-        #nav a:hover { 
-            background-color: #8dceae;
-        }
+#navigationMenu-all a:hover { 
+    background-color: #8dceae;
+}
 
-        .nav a {
-            margin: 0px -2px 0px 0px;
-            padding: 7.5px 30px 7.5px 30px;
-            overflow: hidden;
-            border-color: white;
-            border-width: 2px;
-            border-style: ridge;
-            display: block;
-            float: left;
-            color: white;  
-        }
+.navigationMenu-all a {
+    margin: 0px -2px 0px 0px;
+    padding: 7.5px 30px 7.5px 30px;
+    overflow: hidden;
+    border-color: white;
+    border-width: 2px;
+    border-style: ridge;
+    display: block;
+    float: left;  
+}
 
-        .blogtitle {
-			text-align: center;
-			color: white;
-			margin-top: 70px;
-		}
+.blogTitle-all {
+	text-align: center;
+	margin-top: 70px;
+}
 
-		.blogtitle h1{
-			font-size: 48px;
-            margin-bottom: 0px;
-        }
+.blogTitle-all h1{
+	font-size: 48px;
+    margin-bottom: 0px;
+}
 
-		.undertitle {
-			text-align: center;
-			color: white;
-			font-size: 30px;
-        }
+.underTitle-all {
+	text-align: center;
+	font-size: 30px;
+}
 
-        img{
-            border-color: darkviolet;
-        }
+.image-all{
+    border-color: darkviolet;
+    border-style: outset;
+    border-width: thick;
+    transition: all .1s ease;
+    height: auto;
+}
 
-       /*/footer{
-            text-align: center;
-            color: black;
-            background-color: white;
-            width: 100%;
-            height: 2.5rem;
-            clear: both;
-        } /*/
+.image-all:hover {
+	transform: scale(1.4);
+}
+/*/footer{
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 2.5rem;
+    clear: both;
+} /*/
+
+/* The Index page. */
+
+.posts-index{
+    text-align: center;
+    padding: 20px;
+    list-style-type: none;
+	border-radius: 30px;
+	border-style: outset;
+	border-width: thick;
+}
+.myMotivationForICT-index {
+	background-color: #6ce4e4;
+	width: 50%;
+}
+
+.whyDoesICTFitMe-index {
+	background-color: #8dceae;
+	width: 50%;
+}
+
+.whatIHaveLearnedUpUntilNow-index{
+	background-color: #9da7c8;
+	width: 50%;
+}
+
+.HZLogo-index {
+	width: 40%;
+}
+
+.selfie-index{
+	width: 40%;
+}
+
+/* The profile page */
+
+.introduction-profile {
+    background-color: #8dceae;
+    padding: 20px;
+    list-style-type: none;
+    border-radius: 30px;
+    border-style: outset;
+    border-width: thick;
+    width: 50%;
+}
+
+.selfie-profile {
+    width: 30%;
+    /* margin-left: 70%;
+    margin-top: 0%; */
+}
+
+.babyPhoto-profile {
+    width: 40%;
+}
+
+.surfPhoto-profle {
+    width: 70%;
+}
+
+/* The dashboard page */
+
+.table-dashboard,
+.tableHeader-dashboard,
+.tableData-dashboard{
+    background-color: #6ce4e4;
+    width: auto;
+    align-items: center;
+    border-style: solid;
+    border-color: 1px black;
+    color: black;
+    border-collapse: collapse;
+    transition: all .1s ease;
+}
+
+.table-dashboard,
+.tableData-dashboard:hover{
+    transform: scale(1.2);
+}
+
+.table-dashboard{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.tableData-dashboard{
+    width: 150px;
+}
+
+.asideMenu-ul-dashboard{
+    list-style-type: none;
+    text-align: center;
+    width: 800px;
+    height: 270px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-style: outset;
+    border-width: thick;
+    border-radius: 30px;
+    margin-left: 10%;
+    margin-top: 10%;
+    font-size: 25px;
+}
+.asideMenu-il-dashboard h2{
+    margin: 0px;
+}
+
+/* The FAQ page */
+
+#griBox-faq {
+    font-size: 20px;
+    width: 75%;
+    margin: auto auto auto auto;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto, auto ,auto;
+    grid-gap: 70px;
+    text-align: center;
+}
+
+.faqPosts-faq {
+    padding: 10px;
+    border-style: outset;
+    border-width: thick;
+    border-radius: 30px;
+    width: 350px;
+    transition: all .1s ease;
+    overflow: auto;
+}
+
+.faqPosts-faq:hover {
+    transform: scale(1.4);
+}
+
+.faqPost1Color-faq {
+    background: #8dceae;
+}
+
+.faqPost2Color-faq {
+    background: #0b81b7;
+}
+
+.faqPost3Color-faq {
+    background: #9da7c8;
+}
+
+.faqPost4Color-faq {
+    background: #8dc667;
+}
+
+.faqPost5Color-faq {
+    background: #0766a6;
+}  
+
+/* The blog-feed page */
+
+.blogposts-blog-feed{
+    text-align: center;
+    padding: 20px;
+    list-style-type: none;
+    border-radius: 30px;
+    border-style: outset;
+    border-width: thick;
+    width: 650px;  
+}
+
+.blogPost1-blog-feed{
+    background-color: #0766a6;
+}
+
+.blogPost2-blog-feed {
+    background-color: #9da7c8;
+    margin-left: 38%;
+}
+
+.blogPost3-blog-feed {
+    background-color: #8dc667;
+}
+
+.blogPost4-blog-feed{
+    background-color: #8dceae;
+    margin-left: 38%;
+}
+
+.blogPost5-blog-feed {
+    background-color: #0b81b7;
+}
+
+.HZLogo-blog-feed {
+    width: 350px;
+}
+
+.technasiumLogo-blog-feed {
+    width: 350px;
+}
+
+.oracleLogo-blog-feed {
+    width: 320px;
+}
+
+.softwareEngineer-blog-feed {
+    width: 320px;
+}
