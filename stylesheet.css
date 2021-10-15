@@ -42,6 +42,15 @@ body {
     float: left;  
 }
 
+#alexandraLogo-all {
+    color: rgb(255, 89, 111);
+    text-align: right;
+    margin-right:10px;
+    margin-top: -70px;
+    font-family: 'Rampart One', cursive;
+    font-size: 25px;
+}
+
 .blogTitle-all {
 	text-align: center;
 	margin-top: 70px;
@@ -68,14 +77,6 @@ body {
 .image-all:hover {
 	transform: scale(1.4);
 }
-/*/footer{
-    text-align: center;
-    color: black;
-    background-color: white;
-    width: 100%;
-    height: 2.5rem;
-    clear: both;
-} /*/
 
 /* The Index page. */
 
@@ -124,8 +125,6 @@ body {
 
 .selfie-profile {
     width: 30%;
-    /* margin-left: 70%;
-    margin-top: 0%; */
 }
 
 .babyPhoto-profile {
@@ -145,7 +144,7 @@ body {
     width: auto;
     align-items: center;
     border-style: solid;
-    border-color: 1px black;
+    border-color: white;
     color: black;
     border-collapse: collapse;
     transition: all .1s ease;
@@ -169,7 +168,7 @@ body {
     list-style-type: none;
     text-align: center;
     width: 800px;
-    height: 270px;
+    height: auto;
     background-color: #fb87a0;
     padding: 10px;
     border-style: outset;
