@@ -1,7 +1,7 @@
 /* The CSS under this is for every page. */    
         
 body {
-    background-image: url("http://localhost/photo/backgroundfoto.jpg");
+    background-image: url("backgroundfoto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
