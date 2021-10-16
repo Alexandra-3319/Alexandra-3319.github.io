@@ -19,7 +19,8 @@ body {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    overflow: hidden;    
+    overflow: hidden; 
+    font-family: 'Rampart One', cursive;   
 }
 
 #navigationMenu-all a { 
@@ -54,6 +55,7 @@ body {
 .blogTitle-all {
 	text-align: center;
 	margin-top: 70px;
+    font-family: 'Rampart One', cursive;
 }
 
 .blogTitle-all h1{
@@ -64,6 +66,7 @@ body {
 .underTitle-all {
 	text-align: center;
 	font-size: 30px;
+    font-family: 'Rampart One', cursive;
 }
 
 .image-all{
