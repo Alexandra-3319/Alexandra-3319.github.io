@@ -20,12 +20,13 @@ body {
     margin: 0px;
     padding: 0px;
     overflow: hidden; 
-    font-family: 'Rampart One', cursive;   
+      
 }
 
 #navigationMenu-all a { 
     text-decoration: none;
     color: white;
+    font-family: 'Rampart One', cursive;
     }
             
 #navigationMenu-all a:hover { 
@@ -49,7 +50,7 @@ body {
     margin-right:10px;
     margin-top: -70px;
     font-family: 'Rampart One', cursive;
-    font-size: 25px;
+    font-size: 25px;   
 }
 
 .blogTitle-all {
@@ -116,26 +117,42 @@ body {
 
 /* The profile page */
 
+#gridBox-profile{
+    width: 100%;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 70% 35%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "blog image1"
+      "blog image2"
+      "image3 image3";
+}
+
 .introduction-profile {
     background-color: #85a0fa;
+    height: 750px;
     padding: 20px;
-    list-style-type: none;
     border-radius: 30px;
     border-style: outset;
     border-width: thick;
-    width: 50%;
+    width: 90%;
+    grid-area: blog;
 }
 
 .selfie-profile {
-    width: 30%;
+    width: 70%;
+    grid-area: image1;
 }
 
 .babyPhoto-profile {
-    width: 40%;
+    width: 70%;
+    grid-area: image2;
 }
 
 .surfPhoto-profle {
-    width: 70%;
+    width: 30%;
+    grid-area: image3;
 }
 
 /* The dashboard page */
