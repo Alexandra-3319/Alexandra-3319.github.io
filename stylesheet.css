@@ -91,10 +91,10 @@ body {
     grid-template-columns: 60% 30%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
-      "blog1 image1"
-      "blog2 image1"
-      "blog2 image2"
-      "blog3 image2";
+      "blog1IN image1IN"
+      "blog2IN image1IN"
+      "blog2IN image2IN"
+      "blog3IN image2IN";
   }
 
 .posts-index{
@@ -108,29 +108,29 @@ body {
 .myMotivationForICT-index {
 	background-color: #6ce4e4;
 	width: 75%;
-    grid-area: blog1;
+    grid-area: blog1IN;
 }
 
 .whyDoesICTFitMe-index {
 	background-color:  rgb(255, 89, 111);
 	width: 75%;
-    grid-area: blog2;
+    grid-area: blog2IN;
 }
 
 .whatIHaveLearnedUpUntilNow-index{
 	background-color: #bb65a8;
 	width: 75%;
-    grid-area: blog3;
+    grid-area: blog3IN;
 }
 
 .HZLogo-index {
 	width: 80%;
-    grid-area: image2;
+    grid-area: image2IN;
 }
 
 .selfie-index{
 	width: 80%;
-    grid-area: image1;
+    grid-area: image1IN;
 }
 
 /* The profile page */
@@ -218,6 +218,18 @@ body {
 }
 .asideMenu-il-dashboard h2{
     margin: 0px;
+}
+
+.completed-dashboard{
+    background-color: rgb(127, 250, 197);
+}
+
+.inProgress-dashboard{
+    background-color:rgb(247,255,129);
+}
+
+.unCompleted-dashboard{
+    background-color:rgb(252,95,95);
 }
 
 /* The FAQ page */
